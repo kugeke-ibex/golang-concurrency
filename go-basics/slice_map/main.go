@@ -74,7 +74,8 @@ func main() {
 	v, ok = m2["C"]
 	fmt.Printf("v: %v ok: %v\n", v, ok)
 
-	for k, v := range m2 {
+	for k, v := range m2 { 
+		// ハッシュマップの順番は保証されない
 		fmt.Printf("k: %v v: %v\n", k, v)
 	}
 }
